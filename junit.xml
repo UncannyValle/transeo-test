@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="5" time="2.492">
+  <testsuite name="undefined" errors="0" failures="5" skipped="0" timestamp="2022-04-12T18:27:14" time="1.984" tests="5">
+    <testcase classname=" For each task in stage 0 and stage 1, backward and forward buttons are correctly enabled/disabled" name=" For each task in stage 0 and stage 1, backward and forward buttons are correctly enabled/disabled" time="0.044">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: true
+Received: false
+    at Object.&lt;anonymous&gt; (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/src/App.test.js:43:65)
+    at Object.asyncJestTest (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname=" For each task in stage 2 and stage 3, backward and forward buttons are correctly enabled/disabled" name=" For each task in stage 2 and stage 3, backward and forward buttons are correctly enabled/disabled" time="0.022">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: true
+Received: false
+    at Object.&lt;anonymous&gt; (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/src/App.test.js:113:65)
+    at Object.asyncJestTest (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" For a task in stage 0, can be moved forward till stage 4 and buttons are correctly enabled and disabled in stage 4" name=" For a task in stage 0, can be moved forward till stage 4 and buttons are correctly enabled and disabled in stage 4" time="0.012">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: true
+    at Object.&lt;anonymous&gt; (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/src/App.test.js:153:56)
+    at Object.asyncJestTest (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" For a task in stage 4, can be moved backward till stage 0 and check for buttons are enabled/disabled correctly" name=" For a task in stage 4, can be moved backward till stage 0 and check for buttons are enabled/disabled correctly" time="0.012">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: false
+    at Object.&lt;anonymous&gt; (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/src/App.test.js:210:56)
+    at Object.asyncJestTest (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" after many forward and back operations, tasks are in correct state" name=" after many forward and back operations, tasks are in correct state" time="0.014">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: 3
+    at Object.&lt;anonymous&gt; (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/src/App.test.js:264:39)
+    at Object.asyncJestTest (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/uncannyvalle/Documents/tests/7ff32a90-b2da-48a7-9468-ede6b68efb8a/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
