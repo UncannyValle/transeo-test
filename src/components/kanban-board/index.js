@@ -24,8 +24,16 @@ export default class KanbanBoard extends Component {
       stagesTasks[stageId].push(task);
     }
 
-    const moveRight = () => {
+    const moveRight = (i, index) => {
+      
+      const taskArray = this.state.tasks.map(task => task.stage[i])
+
+      this.setState(taskArray[index] + 1)
+
+      
+      
       console.log("right");
+      console.log(tasks);
     };
     const moveLeft = () => {
       console.log("left");
@@ -72,7 +80,7 @@ export default class KanbanBoard extends Component {
                                 data-testid={`${task.name
                                   .split(" ")
                                   .join("-")}-forward`}
-                                onClick={moveRight}
+                                onClick={() => moveRight(i, index)}
                               >
                                 <i className="material-icons">arrow_forward</i>
                               </button>
