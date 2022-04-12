@@ -28,7 +28,7 @@ export default class KanbanBoard extends Component {
       
       const taskArray = this.state.tasks.map(task => task.stage[i])
 
-      this.setState(taskArray[index] + 1)
+      // this.setState(taskArray[index] + 1)
 
       
       
