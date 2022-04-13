@@ -24,19 +24,26 @@ export default class KanbanBoard extends Component {
       stagesTasks[stageId].push(task);
     }
 
-    const moveRight = (i, index) => {
-      
-      const taskArray = this.state.tasks.map(task => task.stage[i])
-
-      // this.setState(taskArray[index] + 1)
-
-      
-      
-      console.log("right");
-      console.log(tasks);
+    const moveRight = (name) => {
+      this.setState((state) => {
+        let taskys = state.tasks;
+        for (let task of taskys) {
+          if (task.name === name && task.stage < stagesTasks.length - 1) {
+            return (task.stage = task.stage + 1);
+          }
+        }
+      });
     };
-    const moveLeft = () => {
-      console.log("left");
+
+    const moveLeft = (name) => {
+      this.setState((state) => {
+        let taskys = state.tasks;
+        for (let task of taskys) {
+          if (task.name === name && task.stage > 0) {
+            return (task.stage = task.stage - 1);
+          }
+        }
+      });
     };
 
     return (
@@ -67,7 +74,8 @@ export default class KanbanBoard extends Component {
                                 data-testid={`${task.name
                                   .split(" ")
                                   .join("-")}-back`}
-                                onClick={moveLeft}
+                                onClick={() => moveLeft(task.name)}
+                                disabled={task.stage === 0}
                               >
                                 <i className="material-icons">arrow_back</i>
                               </button>
@@ -80,7 +88,8 @@ export default class KanbanBoard extends Component {
                                 data-testid={`${task.name
                                   .split(" ")
                                   .join("-")}-forward`}
-                                onClick={() => moveRight(i, index)}
+                                onClick={() => moveRight(task.name)}
+                                disabled={task.stage === stagesTasks.length -1}
                               >
                                 <i className="material-icons">arrow_forward</i>
                               </button>
